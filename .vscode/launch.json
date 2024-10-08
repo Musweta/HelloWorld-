@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "(gdb) Launch", // or "(lldb) Launch" depending on the platform
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/a.out", // or "main.exe" on Windows
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [],
+        "externalConsole": true, // set to false if you don't want an external console
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb", // or path to gdb on Windows (e.g., C:/mingw/bin/gdb.exe)
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "g++",
+        "internalConsoleOptions": "openOnSessionStart"
+      }
+    ]
+  }
+  
