@@ -1,0 +1,20 @@
+
+#include <iostream>
+#include <stdexcept>
+
+double divide(int a, int b) {
+    if (b == 0) {
+        throw std::runtime_error("Division by zero"); // Throwing an exception
+    }
+    return static_cast<double>(a) / b;
+}
+
+int main() {
+    try {
+        double result = divide(10, 0); // This will trigger the exception
+        std::cout << "Result: " << result << std::endl;
+    } catch (const std::runtime_error& e) { // Catching the exception
+        std::cerr << "Error: " << e.what() << std::endl; // Handling the error
+    }
+    return 0;
+}
