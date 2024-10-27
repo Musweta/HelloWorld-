@@ -1,7 +1,7 @@
 #include<iostream>
 #include<chrono> //call the chrono library
 
-using namespace std;
+using namespace std; //Define the rules in standard library
 using namespace chrono; //use the chrono namespace
 int main()
 {
