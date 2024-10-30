@@ -12,10 +12,10 @@ int main() {
    double myNum1=15.5123456789123456789;// Initialize the float variable
    float myNewNum2;// Create a new interger variable
    myNewNum2=myNum1;//Assign double data type to interger
-   cout<<"myNewNum is ="<<myNewNum; //output the new interger
    int x=20;
    bool notTrue=false;
    bool istrue=x;
+   cout<<"myNewNum is ="<<myNewNum; //output the new interger
    cout<<notTrue<<endl;
    cout<<notTrue<<endl;
 return 0;
