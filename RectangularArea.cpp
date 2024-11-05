@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
 //Variable declaration
-    int area,length,width;    //variable initialization
+int area,length,width;    //variable initialization
     length=8;
     width=5; 
     //computing the area
